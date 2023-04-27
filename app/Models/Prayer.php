@@ -14,4 +14,6 @@ class Prayer extends Model
     use SoftDeletes;
 
     protected $fillable = ['title', 'sub_title', 'content', 'author', 'short_description','image_path','meta_keywords','views', 'deleted_at'];
+
+    public $translatable = ['title', 'sub_title', 'content'];
 }

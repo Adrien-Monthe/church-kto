@@ -1,3 +1,4 @@
+@php use Carbon\Carbon; @endphp
 @extends('frontend.layouts.app')
 
 @section('additional_meta')
@@ -17,6 +18,16 @@
 @section('page-title', __('home.page-title'))
 
 @section('content')
+
+    <style>
+        @media (min-width: 576px) {
+            .sermon__content {
+                width: unset;
+                padding-left: 30px;
+            }
+        }
+
+    </style>
 
     <!-- ================> PageHeader section start here <================== -->
     <div class="pageheader">
@@ -46,15 +57,17 @@
                 <div class="row g-4">
 
                     @foreach($prayers as $prayer)
-                        <div class="col-lg-6 col-12">
+                        <div class="col-lg-4 col-12">
                             <div class="sermon__item">
                                 <div class="sermon__inner">
 
                                     <div class="sermon__content">
-                                        <a href="sermon-single.html"><h6>{{ $prayer->title }}</h6></a>
+                                        <a href="#"><h6>{{ $prayer->title }}</h6></a>
                                         <ul class="sermon__content-metapost">
-                                            <li><i class="far fa-calendar"></i> 10 Jan 2022</li>
-                                            <li><i class="fas fa-user"></i> Admin</li>
+                                            <li>
+                                                <i class="far fa-calendar"></i> {{ Carbon::parse($prayer->created_at)->isoFormat('Do MMM, YYYY') }}
+                                            </li>
+                                            <li><i class="fas fa-user"></i>{{ $prayer->author }}</li>
                                         </ul>
 
                                     </div>
@@ -64,114 +77,47 @@
                     @endforeach
 
 
-                    <div class="col-lg-6 col-12">
-                        <div class="sermon__item">
-                            <div class="sermon__inner">
-                                {{--<div class="sermon__thumb">
-                                    <img src="assets/images/sermon/02.jpg" alt="sermon thumb">
-                                </div> --}}
-                                <div class="sermon__content">
-                                    <a href="sermon-single.html"><h6>Seamlessly embrace distributed portals whereas maintainable platforms.</h6></a>
-                                    <ul class="sermon__content-metapost">
-                                        <li><i class="far fa-calendar"></i> 10 Jan 2022</li>
-                                        <li><i class="fas fa-user"></i> Admin</li>
-                                    </ul>
-    {{--<ul class="sermon__content-social">
-        <li><a href="#"><i class="fas fa-video"></i></a></li>
-        <li><a href="#"><i class="fas fa-headphones-alt"></i></a></li>
-        <li><a href="#"><i class="fas fa-file-alt"></i></a></li>
-        <li><a href="#"><i class="fas fa-image"></i></a></li>
-    </ul>--}}
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-6 col-12">
-<div class="sermon__item">
-<div class="sermon__inner">
-<div class="sermon__thumb">
-    <img src="assets/images/sermon/03.jpg" alt="sermon thumb">
-</div>
-<div class="sermon__content">
-    <a href="sermon-single.html"><h6>Embrace Seamlessly distributed portals whereas maintainable.</h6></a>
-    <ul class="sermon__content-metapost">
-        <li><i class="far fa-calendar"></i> 10 Jan 2022</li>
-        <li><i class="fas fa-user"></i> Admin</li>
-    </ul>
-    <ul class="sermon__content-social">
-        <li><a href="#"><i class="fas fa-video"></i></a></li>
-        <li><a href="#"><i class="fas fa-headphones-alt"></i></a></li>
-        <li><a href="#"><i class="fas fa-file-alt"></i></a></li>
-        <li><a href="#"><i class="fas fa-image"></i></a></li>
-    </ul>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-6 col-12">
-<div class="sermon__item">
-<div class="sermon__inner">
-<div class="sermon__thumb">
-    <img src="assets/images/sermon/04.jpg" alt="sermon thumb">
-</div>
-<div class="sermon__content">
-    <a href="sermon-single.html"><h6>Lorem ipsum dolor sit amet, consectetur Atque, soluta.</h6></a>
-    <ul class="sermon__content-metapost">
-        <li><i class="far fa-calendar"></i> 10 Jan 2022</li>
-        <li><i class="fas fa-user"></i> Admin</li>
-    </ul>
-    <ul class="sermon__content-social">
-        <li><a href="#"><i class="fas fa-video"></i></a></li>
-        <li><a href="#"><i class="fas fa-headphones-alt"></i></a></li>
-        <li><a href="#"><i class="fas fa-file-alt"></i></a></li>
-        <li><a href="#"><i class="fas fa-image"></i></a></li>
-    </ul>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-<!-- ================> Sermon section end here <================== -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================> Sermon section end here <================== -->
 
 
 
-<!-- ================> Social section start here <================== -->
-<div class="social">
-<div class="container">
-<div class="social__area">
-<ul class="social__list">
-<li class="social__list-facebook">
-<a href="#">
-<i class="fab fa-facebook-f"></i>
-<span>facebook</span>
-</a>
-</li>
-<li class="social__list-twitter">
-<a href="#">
-<i class="fab fa-twitter"></i>
-<span>twitter</span>
-</a>
-</li>
-<li class="social__list-linkedin">
-<a href="#">
-<i class="fab fa-linkedin-in"></i>
-<span>linkedin</span>
-</a>
-</li>
-<li class="social__list-instagram">
-<a href="#">
-<i class="fab fa-instagram"></i>
-<span>instagram</span>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<!-- ================> Social section end here <================== -->
+    <!-- ================> Social section start here <================== -->
+    <div class="social">
+        <div class="container">
+            <div class="social__area">
+                <ul class="social__list">
+                    <li class="social__list-facebook">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>facebook</span>
+                        </a>
+                    </li>
+                    <li class="social__list-twitter">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                            <span>twitter</span>
+                        </a>
+                    </li>
+                    <li class="social__list-linkedin">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>linkedin</span>
+                        </a>
+                    </li>
+                    <li class="social__list-instagram">
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                            <span>instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ================> Social section end here <================== -->
 
 @endsection

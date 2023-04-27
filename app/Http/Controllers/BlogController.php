@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreBlogRequest;
 use App\Http\Requests\UpdateBlogRequest;
+use App\Models\Bcategory;
 use App\Models\Bcatergory;
 use App\Models\Blog;
 use App\Models\Btag;
@@ -30,7 +31,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        $data['categories'] = Bcatergory::orderBy('id','desc')->get();
+        $data['categories'] = Bcategory::orderBy('id','desc')->get();
         $data['tags'] = Btag::orderBy('id','desc')->get();
         return view('backend.pages.posts.create-post',$data);
     }

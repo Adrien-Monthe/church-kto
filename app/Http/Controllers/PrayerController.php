@@ -13,7 +13,8 @@ class PrayerController extends Controller
      */
     public function index()
     {
-        //
+        $data['prayers'] = Prayer::orderBy('id','desc')->get();
+        return view('backend.pages.prayers.show-prayers',$data);
     }
 
     /**
@@ -21,7 +22,7 @@ class PrayerController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.pages.prayers.create-prayer');
     }
 
     /**
@@ -29,7 +30,33 @@ class PrayerController extends Controller
      */
     public function store(StorePrayerRequest $request)
     {
-        //
+        $prayer_id = $request->prayer_id;
+
+        $codename =  $this->clean($request->title_fr);
+
+        $prayer  =   Prayer::updateOrCreate(['id' => $prayer_id],
+            [
+                'codename' => $codename,
+
+                'meta_keywords' => $request->meta_keywords,
+
+                'author' => $request->author,
+
+                'title' => [
+                    'en' => $request->title_en,
+                    'fr' => $request->title_fr,
+                ],
+                'sub_title' => [
+                    'en' => $request->sub_title_en,
+                    'fr' => $request->sub_title_fr,
+                ],
+                'content' => [
+                    'en' => $request->content_en,
+                    'fr' => $request->content_fr,
+                ],
+
+            ]);
+        return redirect()->route('prayers.index',app()->getLocale())->with('success','Prayer has been added successfully');
     }
 
     /**
@@ -37,7 +64,8 @@ class PrayerController extends Controller
      */
     public function show(Prayer $prayer)
     {
-        //
+        $data['prayer'] = $prayer;
+        return view('backend.pages.prayers.show-prayer',$data);
     }
 
     /**
@@ -45,7 +73,8 @@ class PrayerController extends Controller
      */
     public function edit(Prayer $prayer)
     {
-        //
+        $data['prayer'] = $prayer;
+        return view('backend.pages.prayers.edit-prayer',$data);
     }
 
     /**
@@ -53,7 +82,31 @@ class PrayerController extends Controller
      */
     public function update(UpdatePrayerRequest $request, Prayer $prayer)
     {
-        //
+        $prayer_id = $prayer->id;
+
+        $codename =  $this->clean($request->title_fr);
+
+        $prayer  =   Prayer::updateOrCreate(['id' => $prayer_id],
+            [
+                'codename' => $codename,
+
+                'meta_keywords' => $request->meta_keywords,
+
+                'title' => [
+                    'en' => $request->title_en,
+                    'fr' => $request->title_fr,
+                ],
+                'sub_title' => [
+                    'en' => $request->sub_title_en,
+                    'fr' => $request->sub_title_fr,
+                ],
+                'content' => [
+                    'en' => $request->content_en,
+                    'fr' => $request->content_fr,
+                ],
+
+            ]);
+        return redirect()->route('players.index',app()->getLocale())->with('success','Prayer has been added successfully');
     }
 
     /**

@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('prayers', function (Blueprint $table) {
             $table->id();
+            $table->string("codename")->unique()->nullable();
             $table->json("title")->nullable();
             $table->json("sub_title")->nullable();
             $table->json("content")->nullable();
-            $table->json("author")->nullable();
+            $table->string("author")->nullable();
             $table->json("short_description")->nullable();
             $table->text("image_path")->nullable();
             $table->string("meta_keywords")->nullable();

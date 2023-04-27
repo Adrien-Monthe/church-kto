@@ -1,19 +1,19 @@
 @extends('backend.layouts.app')
 
-@section('page-title', __('prayers.show-prayers-title'))
+@section('page-title', "Listes des Prières")
 
 @section('content')
 
     <section class="section">
         <div class="row">
             <div class="col-lg-12">
-                <a href="{{ route('prayers.create', app()->getLocale())  }}" class="btn btn-primary btn-primary-custom"><i
-                        class="bi bi-bag-plus me-1"></i> @lang('prayers.create-prayer-title')</a>
+                <a href="{{ route('prayers.create')  }}" class="btn btn-primary btn-primary-custom"><i
+                        class="bi bi-bag-plus me-1"></i> Ajouter une prière</a>
                 <br>
                 <br>
                 <div class="card recent-sales overflow-auto">
                     <div class="card-body">
-                        <h5 class="card-title">@lang('prayers.show-prayers-title')</h5>
+                        <h5 class="card-title">Listes des Prieres</h5>
 
                         <table class="table table-borderless datatable">
                             <thead>
@@ -37,15 +37,16 @@
                                         <form action="{{ route('prayers.destroy',[app()->getLocale() ,$prayer->id]) }}"
                                               method="Post">
                                             <a class="btn btn-info"
-                                               href="{{ route('prayers.show',[app()->getLocale() ,$prayer->id]) }}">@lang('general.btn-view')</a>
+                                               href="{{ route('prayers.show',[app()->getLocale() ,$prayer->id]) }}"><i
+                                                    class="bi bi-eye"></i></a>
 
-                                            <a class="btn btn-primary"
-                                               href="{{ route('prayers.edit',[app()->getLocale() ,$prayer->id]) }}"><i
-                                                    class="bi bi-pencil-square"></i> </a>
+                                            <a class="btn btn-warning"
+                                               href="{{ route('prayers.edit',[app()->getLocale() ,$prayer->id]) }}">
+                                                <i class="bi bi-pencil-square"></i> </a>
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-danger"
-                                                    disabled>@lang('general.btn-delete')</button>
+                                                    ><i class="bi bi-trash"></i></button>
                                         </form>
                                     </td>
 
