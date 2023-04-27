@@ -1,0 +1,11 @@
+<script src="/frontend/js/jquery-3.6.0.min.js"></script>
+<script src="/frontend/js/bootstrap.bundle.min.js"></script>
+<script src="/frontend/js/waypoints.min.js"></script>
+<!-- <script src="/frontend/js/all.min.js"></script> -->
+<script src="/frontend/js/swiper.min.js"></script>
+<script src="/frontend/js/lightcase.js"></script>
+<script src="/frontend/js/isotope.pkgd.min.js"></script>
+<script src="/frontend/js/donate-range.js"></script>
+<script src="/frontend/js/jquery.counterup.min.js"></script>
+<script src="/frontend/js/wow.js"></script>
+<script src="/frontend/js/custom.js"></script>

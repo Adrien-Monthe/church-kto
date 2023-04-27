@@ -29,7 +29,7 @@
 
     </main><!-- End #main -->
 
-<x:notify-messages/>
+
 
 @include('backend.layouts.footer')
 

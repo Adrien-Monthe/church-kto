@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('pcomments', function (Blueprint $table) {
             $table->id();
+            $table->string("name")->nullable();
+            $table->string("email")->nullable();
+            $table->integer("rate")->nullable()->default(0);
+            $table->string("comment")->nullable();
+            $table->foreignId("product_id")->nullable();
+            $table->timestamp("deleted_at")->default(null)->nullable();
             $table->timestamps();
         });
     }

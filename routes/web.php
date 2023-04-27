@@ -1,5 +1,15 @@
 <?php
 
+use App\Http\Controllers\BcategoryController;
+use App\Http\Controllers\BcommentController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\BtagController;
+use App\Http\Controllers\FAQController;
+use App\Http\Controllers\PcategoryController;
+use App\Http\Controllers\PcommentController;
+use App\Http\Controllers\PrayerController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\PtagController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,6 +29,10 @@ Route::group(['prefix' => app()->getLocale()], function () {
 
     Route::get('/', [App\Http\Controllers\FrontendController::class, 'index'])->name('home');
 
+    Route::get('/prieres', [App\Http\Controllers\FrontendController::class, 'prayers'])->name('prayer');
+
+    Route::get('/contact', [App\Http\Controllers\FrontendController::class, 'contact'])->name('contact');
+
 });
 
 Route::middleware([
@@ -34,7 +48,7 @@ Route::middleware([
     //*********** BLOG ************//
 
     /** BLOG CATEGORIES */
-    Route::resource('bcategories', BcatergoryController::class);
+    Route::resource('bcategories', BcategoryController::class);
 
     /** BLOG TAGS */
     Route::resource('btags', BtagController::class);
@@ -59,6 +73,12 @@ Route::middleware([
     /** PRODUCTS COMMENTS */
     Route::resource('pcomments', PcommentController::class);
 
-    //*********** FOOTBALL ************//
+    /** FAQS */
+    Route::resource('faqs', FAQController::class);
+
+    /** PRAYERS */
+    Route::resource('prayers', PrayerController::class);
+
+
 
 });

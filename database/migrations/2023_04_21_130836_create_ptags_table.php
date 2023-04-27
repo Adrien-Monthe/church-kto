@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('ptags', function (Blueprint $table) {
             $table->id();
+            $table->string("codename")->unique()->nullable();
+            $table->json("name")->nullable();
+            $table->string("meta_description")->nullable();
+            $table->string("meta_keywords")->nullable();
+            $table->text("meta_image_path")->nullable();
+            $table->json("short_description")->nullable();
+            $table->json("description")->nullable();
+            $table->text("image_path")->nullable();
+            $table->timestamp("deleted_at")->default(null)->nullable();
             $table->timestamps();
         });
     }

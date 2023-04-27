@@ -11,16 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bcategories', function (Blueprint $table) {
+        Schema::create('prayers', function (Blueprint $table) {
             $table->id();
-            $table->string("codename")->unique()->nullable();
-            $table->json("name")->nullable();
-            $table->string("meta_description")->nullable();
-            $table->string("meta_keywords")->nullable();
-            $table->text("meta_image_path")->nullable();
+            $table->json("title")->nullable();
+            $table->json("sub_title")->nullable();
+            $table->json("content")->nullable();
+            $table->json("author")->nullable();
             $table->json("short_description")->nullable();
-            $table->json("description")->nullable();
             $table->text("image_path")->nullable();
+            $table->string("meta_keywords")->nullable();
+            $table->integer("views")->nullable()->default(0);
             $table->timestamp("deleted_at")->default(null)->nullable();
             $table->timestamps();
         });
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('bcategories');
+        Schema::dropIfExists('prayers');
     }
 };
