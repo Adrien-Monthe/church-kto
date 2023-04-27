@@ -65,9 +65,9 @@
                                         <a href="#"><h6>{{ $prayer->title }}</h6></a>
                                         <ul class="sermon__content-metapost">
                                             <li>
-                                                <i class="far fa-calendar"></i> {{ Carbon::parse($prayer->created_at)->isoFormat('Do MMM, YYYY') }}
+                                                <i class="far fa-calendar"></i> {{ Carbon::parse($prayer->created_at)->isoFormat('Do MMM, YYYY') }}<br>
                                             </li>
-                                            <br>
+
                                             <li><i class="fas fa-user"></i>{{ $prayer->author }}</li>
                                         </ul>
 
