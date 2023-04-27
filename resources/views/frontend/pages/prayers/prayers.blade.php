@@ -39,8 +39,8 @@
                 <div class="pageheader__right">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Sermon</li>
+                            <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Prières</li>
                         </ol>
                     </nav>
                 </div>
@@ -67,6 +67,7 @@
                                             <li>
                                                 <i class="far fa-calendar"></i> {{ Carbon::parse($prayer->created_at)->isoFormat('Do MMM, YYYY') }}
                                             </li>
+                                            <br>
                                             <li><i class="fas fa-user"></i>{{ $prayer->author }}</li>
                                         </ul>
 

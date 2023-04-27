@@ -39,7 +39,7 @@
                             <div class="col-6">
                                 <label for="sub_title_fr" class="form-label">Sous-Titre FR
                                     </label>
-                                <input type="text" name="title_fr" class="form-control" id="title_fr">
+                                <input type="text" name="sub_title_fr" class="form-control" id="sub_title_fr">
 
                             </div>
                             <div class="col-6">
