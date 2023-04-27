@@ -34,7 +34,7 @@
         <div class="container">
             <div class="pageheader__area">
                 <div class="pageheader__left">
-                    <h3>Sermon</h3>
+                    <h3>Prières</h3>
                 </div>
                 <div class="pageheader__right">
                     <nav aria-label="breadcrumb">
