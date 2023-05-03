@@ -57,7 +57,7 @@
 
 
 
-            <li><a href="{{ route('contact') }}">Contactez Nous</a></li>
+            <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
         <a href="cause-single.html" class="default-btn"><span>Faites un Don <i class="fas fa-heart"></i></span></a>
     </div>
