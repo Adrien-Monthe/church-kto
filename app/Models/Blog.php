@@ -42,7 +42,7 @@ class Blog extends Model
 
     public function category()
     {
-        return $this->belongsTo(Bcatergory::class, 'bcatergory_id',);
+        return $this->belongsTo(Bcategory::class, 'bcatergory_id',);
     }
 
     public function comments()
