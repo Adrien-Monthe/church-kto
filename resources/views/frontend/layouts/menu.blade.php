@@ -25,6 +25,7 @@
                 <ul>
                     <li><a href="index.html" class="">Questions réponses</a></li>
                     <li><a href="index-2.html">Textes du jour</a></li>
+                    <li><a href="index-2.html">Evangile en Image</a></li>
                     <li class="{{ Route::currentRouteName() == "prayer" ? "active" : "" }}"><a href="{{ route('prayer') }}">Prières</a></li>
                     <li><a href="index-3.html">Réflexions et catéchèses</a></li>
 
