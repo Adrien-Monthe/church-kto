@@ -50,7 +50,7 @@
                             <div class="blog__item">
                                 <div class="blog__inner">
                                     <div class="blog__thumb">
-                                        <a href="{{ route('single_blog_page', [$blog->codename ] ) }}"><img src="{{ asset($blog->image_path  ? : "/frontend/images/gallery/09.jpg") }}" alt="{{ $blog->name }}"></a>
+                                        <a href="{{ route('single_blog_page', [$blog->codename ] ) }}"><img style="height: 250px; width: 100%; object-fit: cover" src="{{ asset($blog->image_path  ? : "/frontend/images/gallery/09.jpg") }}" alt="{{ $blog->name }}"></a>
                                     </div>
                                     <div class="blog__content">
                                         <a href="{{ route('single_blog_page', [$blog->codename ] ) }}"><h5>{{ $blog->title }}</h5></a>
