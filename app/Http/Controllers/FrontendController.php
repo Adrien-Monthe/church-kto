@@ -83,7 +83,7 @@ class FrontendController extends Controller
 
     public function getData(){
         $data['recent_blogs'] = Blog::orderBy('id', 'desc')->limit(3)->get();
-        $data['categories'] = Bcategory::inRandomOrder()->limit(6)->get();
+        $data['categories'] = Bcategory::inRandomOrder()->limit(8)->get();
         return $data;
     }
 }
