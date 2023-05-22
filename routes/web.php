@@ -31,6 +31,10 @@ Route::group(['prefix' => app()->getLocale()], function () {
 
     Route::get('/prieres', [App\Http\Controllers\FrontendController::class, 'prayers'])->name('prayer');
 
+    Route::get('/blog', [App\Http\Controllers\FrontendController::class, 'blog'])->name('blog');
+
+    Route::get('/blog-cat/{category}', [App\Http\Controllers\FrontendController::class, 'blog_category'])->name('blog_category');
+
     Route::get('/contact', [App\Http\Controllers\FrontendController::class, 'contact'])->name('contact');
 
 });

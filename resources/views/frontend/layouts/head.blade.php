@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/frontend/css/swiper.min.css">
     <link rel="stylesheet" href="/frontend/css/lightcase.css">
 
+    @yield('additional_meta')
+
     <!-- main css for template -->
     <link rel="stylesheet" href="/frontend/css/style.min.css">
 </head>

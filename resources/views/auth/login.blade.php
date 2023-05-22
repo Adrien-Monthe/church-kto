@@ -9,7 +9,7 @@
                     <div class="d-flex justify-content-center py-4">
                         <a href="{{ route('home' ) }}" class="logo d-flex align-items-center w-auto">
                             <img src="{{ asset('frontend/images/Logo/ln_logo_4.png')}}" alt="">
-                            <span class="d-none d-lg-block"> Luvnation Agency</span>
+                            <span class="d-none d-lg-block"> Enfance KTO DLQ</span>
                         </a>
                     </div><!-- End Logo -->
 

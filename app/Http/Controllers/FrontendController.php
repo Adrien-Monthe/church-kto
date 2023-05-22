@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Prayer;
 use Illuminate\Http\Request;
 
@@ -26,5 +27,11 @@ class FrontendController extends Controller
     public function contact()
     {
         return view('frontend.pages.contact');
+    }
+
+    public function blog()
+    {
+        $data['blogs'] = Blog::orderBy('id', 'desc')->get();
+        return view('frontend.pages.blog.blogs', $data);
     }
 }
