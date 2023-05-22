@@ -19,6 +19,6 @@ class Bcategory extends Model
 
     public function blogs()
     {
-        return $this->hasMany(Blog::class);
+        return $this->hasMany(Blog::class, 'bcatergory_id');
     }
 }

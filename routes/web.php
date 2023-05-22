@@ -35,6 +35,8 @@ Route::group(['prefix' => app()->getLocale()], function () {
 
     Route::get('/blog-cat/{category}', [App\Http\Controllers\FrontendController::class, 'blog_category'])->name('blog_category');
 
+    Route::get('/blog/{blog_id}', [App\Http\Controllers\FrontendController::class, 'single_blog_page'])->name('single_blog_page');
+
     Route::get('/contact', [App\Http\Controllers\FrontendController::class, 'contact'])->name('contact');
 
 });

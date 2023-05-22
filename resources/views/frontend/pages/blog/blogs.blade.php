@@ -1,3 +1,4 @@
+@php use Carbon\Carbon; @endphp
 @extends('frontend.layouts.app')
 
 @section('additional_meta')
@@ -23,12 +24,12 @@
         <div class="container">
             <div class="pageheader__area">
                 <div class="pageheader__left">
-                    <h3>Blog</h3>
+                    <h3>Accueil</h3>
                 </div>
                 <div class="pageheader__right">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Blog</li>
                         </ol>
                     </nav>
@@ -54,9 +55,9 @@
                                     <div class="blog__content">
                                         <a href="blog-single.html"><h5>{{ $blog->title }}</h5></a>
                                         <ul class="blog__content-metapost">
-                                            <li><i class="far fa-calendar"></i> 10 Jan 2022</li>
+                                            <li><i class="far fa-calendar"></i> {{ Carbon::parse($blog->created_at)->isoFormat('Do MMM, YYYY') }}</li>
                                             <li><i class="fas fa-user"></i> {{ $blog->author }}</li>
-                                            <li><i class="fas fa-tag"></i> <a href="#">{{ $blog->category ? $blog->category->name : "" }}</a></li>
+                                            <li><i class="fas fa-tag"></i> <a href="{{ $blog->category ? route('blog_category', [$blog->category->id]) : "#" }}">{{ $blog->category ? $blog->category->name : "" }}</a></li>
                                         </ul>
                                         <p>{{ $blog->short_description }}</p>
                                         <a href="blog-single.html" class="default-btn move-right"><span>Read More</span></a>
