@@ -22,22 +22,15 @@
                 <div class="col-xl-3 col-sm-6 col-12">
                     <div class="footer__tags">
                         <div class="section__header">
-                            <h2>Post Tag</h2>
+                            <h2>Catégories</h2>
                         </div>
                         <div class="section__wrapper">
                             <ul>
-                                <li><a href="#">Christian</a></li>
-                                <li><a href="#">Hindu</a></li>
-                                <li><a href="#">Magazine</a></li>
-                                <li><a href="#">Muslims</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">SEO</a></li>
-                                <li><a href="#">Themes</a></li>
-                                <li><a href="#">WordPress</a></li>
-                                <li><a href="#">Web Development</a></li>
-                                <li><a href="#">Design</a></li>
-                                <li><a href="#">Photography</a></li>
-                                <li><a href="#">Media</a></li>
+                                @foreach($categories as $cat)
+                                    <li><a href="{{ route('blog_category', [$cat->id]) }}">{{ $cat->name }}</a></li>
+                                @endforeach
+
+
                             </ul>
                         </div>
                     </div>
