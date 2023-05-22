@@ -50,10 +50,10 @@
                             <div class="blog__item">
                                 <div class="blog__inner">
                                     <div class="blog__thumb">
-                                        <a href="blog-single.html"><img src="{{ asset($blog->image_path) }}" alt="{{ $blog->name }}"></a>
+                                        <a href="{{ route('single_blog_page', [$blog->codename ] ) }}"><img src="{{ asset($blog->image_path) }}" alt="{{ $blog->name }}"></a>
                                     </div>
                                     <div class="blog__content">
-                                        <a href="blog-single.html"><h5>{{ $blog->title }}</h5></a>
+                                        <a href="{{ route('single_blog_page', [$blog->codename ] ) }}"><h5>{{ $blog->title }}</h5></a>
                                         <ul class="blog__content-metapost">
                                             <li><i class="far fa-calendar"></i> {{ Carbon::parse($blog->created_at)->isoFormat('Do MMM, YYYY') }}</li>
                                             <li><i class="fas fa-user"></i> {{ $blog->author }}</li>
