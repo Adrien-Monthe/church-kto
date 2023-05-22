@@ -84,7 +84,7 @@
                     <a href="index.html"><img src="/frontend/images/logo/01.png" alt="footer logo"></a>
                 </div>
                 <div class="footer__bottom-content">
-                    <p>Copyright &copy; 2022 <a href="index.html">Peace</a> | Designed by <a href="https://themeforest.net/user/codexcoder/portfolio">CodexCoder</a></p>
+                    <p>Copyright &copy; 2022 <a href="index.html">Enfance KTO Douala</a> | Designed by <a href="https://themeforest.net/user/codexcoder/portfolio">Genzis</a></p>
                 </div>
             </div>
         </div>
