@@ -10,8 +10,8 @@
             <li>
                 <a href="#">Actualités</a>
                 <ul>
-                    <li><a href="index.html" class="">Agenda</a></li>
-                    <li><a href="index-2.html">Vie de la diocèse</a></li>
+                    <li><a href="{{ route('home') }}" class="">Agenda</a></li>
+                    <li><a href="{{ route('home') }}">Vie de la diocèse</a></li>
                     <li><a href="index-3.html">Vie des enfants</a></li>
                     <li><a href="index-3.html">culture</a></li>
                     <li><a href="index-3.html">évènements</a></li>
@@ -23,9 +23,9 @@
                 <a href="#">Questions de foi</a>
 
                 <ul>
-                    <li><a href="index.html" class="">Questions réponses</a></li>
-                    <li><a href="index-2.html">Textes du jour</a></li>
-                    <li><a href="index-2.html">Evangile en Image</a></li>
+                    <li><a href="{{ route('blog_category', 7) }}" class="">Questions réponses</a></li>
+                    <li><a href="{{ route('home') }}">Textes du jour</a></li>
+                    <li><a href="{{ route('home') }}">Evangile en Image</a></li>
                     <li class="{{ Route::currentRouteName() == "prayer" ? "active" : "" }}"><a href="{{ route('prayer') }}">Prières</a></li>
                     <li><a href="index-3.html">Réflexions et catéchèses</a></li>
 
@@ -37,8 +37,8 @@
                 <a href="#">Amour & Sexualité</a>
 
                 <ul>
-                    <li><a href="index.html" class="">Témoignages, </a></li>
-                    <li><a href="index-2.html">Réponses aux questions</a></li>
+                    <li><a href="{{ route('blog_category', 1) }}" class="">Témoignages, </a></li>
+                    <li><a href="{{ route('blog_category', 11) }}">Réponses aux questions</a></li>
                 </ul>
 
             </li>
@@ -47,10 +47,10 @@
                 <a href="#">Ktosphère</a>
 
                 <ul>
-                    <li><a href="index.html" class="">Galeries</a></li>
-                    <li><a href="index-2.html">Vidéos</a></li>
+                    <li><a href="{{ route('home') }}" class="">Galeries</a></li>
+                    <li><a href="{{ route('home') }}">Vidéos</a></li>
                     <li><a href="{{ route('blog_category', 14) }}">Groupes & Mouvements</a></li>
-                    <li><a href="index-2.html">Liens</a></li>
+                    <li><a href="{{ route('home') }}">Liens</a></li>
                 </ul>
 
             </li>
