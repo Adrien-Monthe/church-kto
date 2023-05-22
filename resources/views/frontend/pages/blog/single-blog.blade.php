@@ -185,12 +185,12 @@
 
                             <div class="sidebar__tab">
                                 <div class="section__header">
-                                    <h2>Post Tag</h2>
+                                    <h2>Articles</h2>
                                 </div>
                                 <div class="section__wrapper">
                                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="post-tab" data-bs-toggle="tab" data-bs-target="#post" type="button" role="tab" aria-controls="post" aria-selected="true">Recent Post</button>
+                                            <button class="nav-link active" id="post-tab" data-bs-toggle="tab" data-bs-target="#post" type="button" role="tab" aria-controls="post" aria-selected="true">Articles Récents</button>
                                         </li>
 
                                     </ul>
