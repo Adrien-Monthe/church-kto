@@ -865,7 +865,7 @@
     <!-- ================> Cause section end here <================== -->
 
 
-    @include('frontend.layouts.blog')
+    @include('frontend.layouts.blog.blog-section')
 
 
 
