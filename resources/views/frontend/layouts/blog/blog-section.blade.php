@@ -25,7 +25,7 @@
                                                 <li><i class="fas fa-user"></i> {{ $blog->author }}</li>
                                                 <li><i class="far fa-eye"></i> <a href="#">{{ $blog->views }}</a></li>
                                             </ul>
-                                            <p>{{ substr($blog->short_description, 0, 200)."..."  }}</p>
+                                            <p style="text-align: justify">{{ substr($blog->short_description, 0, 200)."..."  }}</p>
                                         </div>
                                     </div>
                                 </div>
