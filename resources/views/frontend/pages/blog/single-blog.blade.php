@@ -223,7 +223,7 @@
                             <div class="sidebar__tag">
                                 <div class="footer__tags">
                                     <div class="section__header">
-                                        <h2>Post Tag</h2>
+                                        <h2>Tags</h2>
                                     </div>
                                     <div class="section__wrapper">
                                         <ul>
