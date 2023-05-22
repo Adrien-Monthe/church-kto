@@ -32,6 +32,7 @@ class FrontendController extends Controller
     public function blog()
     {
         $data['blogs'] = Blog::orderBy('id', 'desc')->get();
+
         return view('frontend.pages.blog.blogs', $data);
     }
 }

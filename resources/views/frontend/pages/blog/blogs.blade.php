@@ -56,7 +56,7 @@
                                         <ul class="blog__content-metapost">
                                             <li><i class="far fa-calendar"></i> 10 Jan 2022</li>
                                             <li><i class="fas fa-user"></i> {{ $blog->author }}</li>
-                                            <li><i class="fas fa-tag"></i> <a href="#">{{ $blog->category ? $blog->category->nam : "" }}</a></li>
+                                            <li><i class="fas fa-tag"></i> <a href="#">{{ $blog->category ? $blog->category->name : "" }}</a></li>
                                         </ul>
                                         <p>{{ $blog->short_description }}</p>
                                         <a href="blog-single.html" class="default-btn move-right"><span>Read More</span></a>
