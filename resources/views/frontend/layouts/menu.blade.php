@@ -49,7 +49,7 @@
                 <ul>
                     <li><a href="index.html" class="">Galeries</a></li>
                     <li><a href="index-2.html">Vidéos</a></li>
-                    <li><a href="index-2.html">Groupes & Mouvements</a></li>
+                    <li><a href="{{ route('blog_category', 14) }}">Groupes & Mouvements</a></li>
                     <li><a href="index-2.html">Liens</a></li>
                 </ul>
 
