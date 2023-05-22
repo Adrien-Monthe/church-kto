@@ -15,6 +15,7 @@ class FrontendController extends Controller
     public function index()
     {
         $data = $this->getData();
+        $data['blogs'] = Blog::inRandomOrder()->limit(6)->get();
 
 
         return view('frontend.pages.home', $data);

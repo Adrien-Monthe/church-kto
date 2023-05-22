@@ -12,7 +12,7 @@
                     <div class="blog__left">
                         <div class="blog__area">
 
-                            @foreach($recent_blogs as $blog)
+                            @foreach($blogs as $blog)
                                 <div class="blog__item">
                                     <div class="blog__inner">
                                         <div class="blog__thumb">
