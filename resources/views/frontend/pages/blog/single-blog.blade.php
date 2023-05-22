@@ -3,9 +3,9 @@
 
 @section('additional_meta')
 
-    <meta property="og:image" content="{{ asset($blog->image_path ? : "frontend/images/Logo/ln_logo_3.png") }}"/>
-    <meta property="og:image:url" content="{{ asset($blog->image_path) }}"/>
-    <meta property="og:image:secure_url" content="{{ asset($blog->image_path) }}"/>
+    <meta property="og:image" content="{{ asset($blog->image_path  ? : "/frontend/images/gallery/09.jpg") }}"/>
+    <meta property="og:image:url" content="{{ asset($blog->image_path  ? : "/frontend/images/gallery/09.jpg") }}"/>
+    <meta property="og:image:secure_url" content="{{ asset($blog->image_path  ? : "/frontend/images/gallery/09.jpg") }}"/>
     <meta property="og:type" content="article"/>
 
 
@@ -54,7 +54,7 @@
                                 <div class="blog__item">
                                     <div class="blog__inner">
                                         <div class="blog__thumb">
-                                            <img src="{{ asset($blog->image_path) }}" alt="{{ $blog->name }}">
+                                            <img src="{{ asset($blog->image_path  ? : "/frontend/images/gallery/09.jpg") }}" alt="{{ $blog->name }}">
                                         </div>
                                         <div class="blog__content">
                                             <h3>{{ $blog->title }}.</h3>
@@ -202,7 +202,7 @@
                                                         <div class="footer__post-item">
                                                             <div class="footer__post-inner">
                                                                 <div class="footer__post-thumb">
-                                                                    <a href="{{ route('single_blog_page', [$rblog->codename ] ) }}"><img src="{{ asset($rblog->image_path) }}" alt="footer post"></a>
+                                                                    <a href="{{ route('single_blog_page', [$rblog->codename ] ) }}"><img src="{{ asset($rblog->image_path  ? : "/frontend/images/gallery/09.jpg") }}" alt="footer post"></a>
                                                                 </div>
                                                                 <div class="footer__post-content">
                                                                     <a href="{{ route('single_blog_page', [$rblog->codename ] ) }}"><h6>{{ $rblog->title }}</h6></a>

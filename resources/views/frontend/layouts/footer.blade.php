@@ -1,3 +1,4 @@
+@php use Carbon\Carbon; @endphp
 <!-- ================> Footer section start here <================== -->
 <footer class="footer">
     <div class="footer__top padding--top padding--bottom">
@@ -6,7 +7,7 @@
                 <div class="col-xl-3 col-sm-6 col-12">
                     <div class="footer__about">
                         <div class="section__header">
-                            <h2>About Peace</h2>
+                            <h2>Apropos de Enfance KTO DLA</h2>
                         </div>
                         <div class="section__wrapper">
                             <div class="footer__about-thumb">
@@ -47,39 +48,19 @@
                             <h2>Recent Post</h2>
                         </div>
                         <div class="section__wrapper">
-                            <div class="footer__post-item">
-                                <div class="footer__post-inner">
-                                    <div class="footer__post-thumb">
-                                        <a href="blog-single.html"><img src="/frontend/images/footer/post/01.jpg" alt="footer post"></a>
-                                    </div>
-                                    <div class="footer__post-content">
-                                        <a href="blog-single.html"><h6>Collaboratively Coordinate.</h6></a>
-                                        <p><i class="far fa-calendar-alt"></i> 10 January, 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="footer__post-item">
-                                <div class="footer__post-inner">
-                                    <div class="footer__post-thumb">
-                                        <a href="blog-single.html"><img src="/frontend/images/footer/post/02.jpg" alt="footer post"></a>
-                                    </div>
-                                    <div class="footer__post-content">
-                                        <a href="blog-single.html"><h6>Quickly Develop Exceptional</h6></a>
-                                        <p><i class="far fa-calendar-alt"></i> 10 January, 2022</p>
+                            @foreach($recent_blogs as $rblog)
+                                <div class="footer__post-item">
+                                    <div class="footer__post-inner">
+                                        <div class="footer__post-thumb">
+                                            <a href="{{ route('single_blog_page', [$rblog->codename ] ) }}"><img src="{{ asset($rblog->image_path  ? : "/frontend/images/gallery/09.jpg") }}" alt="footer post"></a>
+                                        </div>
+                                        <div class="footer__post-content">
+                                            <a href="{{ route('single_blog_page', [$rblog->codename ] ) }}"><h6>{{ $rblog->title }}</h6></a>
+                                            <p><i class="far fa-calendar-alt"></i> {{ Carbon::parse($rblog->created_at)->isoFormat('Do MMM, YYYY') }}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="footer__post-item">
-                                <div class="footer__post-inner">
-                                    <div class="footer__post-thumb">
-                                        <a href="blog-single.html"><img src="/frontend/images/footer/post/03.jpg" alt="footer post"></a>
-                                    </div>
-                                    <div class="footer__post-content">
-                                        <a href="blog-single.html"><h6>Why you need Peace WordPress Theme?</h6></a>
-                                        <p><i class="far fa-calendar-alt"></i> 10 January, 2022</p>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
