@@ -106,9 +106,9 @@
                 <div class="col-lg-4 col-12">
                     <div class="about__thumbpart">
                         <img src="/frontend/images/about/01.jpg" alt="about">
-                        <h3>Deniyel Murchi</h3>
-                        <span>Church Pastor</span>
-                        <p>Objectively streamline low-risk high-yield results whereas client-centric products. Objectively enable unique.</p>
+                        <h3>Mme Laurette NGANKAM</h3>
+{{--                        <span>Church Pastor</span>--}}
+                        <p>Responsable de la Commission Diocésaine de l'Enfance</p>
                         <ul>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -120,7 +120,7 @@
                     <div class="about__contentpart ms-lg-4 ps-lg-5 border-start">
                         <div class="section__header">
                             <h2>A propos de Nous?</h2>
-                            <p style="text-align: justify;">La Commission Diocésaine de l’Enfance (CDE) a pour principal rôle de soutenir l’éducation des enfants en leur inculquant des valeurs humaines et chrétiennes leur permettant de s’intégrer dans la société et d’y apporter un changement. Cette participation à leur éducation est assurée par les encadreurs d’enfants volontaires dans chaque paroisse et formés pour cette mission. La mise en œuvre de cette plateforme, nous permet de participer activement à la formation continue des petits amis de Jésus et de par ailleurs nous aussi en tant qu’encadreurs d’enfants.</p>
+                            <p style="text-align: justify;">La <strong>Commission Diocésaine de l’Enfance (CDE)</strong> a pour principal rôle de soutenir l’éducation des enfants en leur inculquant des valeurs humaines et chrétiennes leur permettant de s’intégrer dans la société et d’y apporter un changement. Cette participation à leur éducation est assurée par les encadreurs d’enfants volontaires dans chaque paroisse et formés pour cette mission. La mise en œuvre de cette plateforme, nous permet de participer activement à la formation continue des petits amis de Jésus et de par ailleurs nous aussi en tant qu’encadreurs d’enfants.</p>
                         </div>
                         <div class="section__wrapper">
                             <div class="about__item">
