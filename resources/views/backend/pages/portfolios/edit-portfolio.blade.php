@@ -26,7 +26,7 @@
 
                         <!-- Multi Columns Form -->
                         <form class="row g-3" method="POST"
-                              action="{{ route('portfolios.update', [app()->getLocale(), $portfolio->id])  }}"
+                              action="{{ route('portfolios.update', [ $portfolio->id])  }}"
                               enctype="multipart/form-data">
 
                             @csrf

@@ -5,8 +5,12 @@ use App\Http\Controllers\BcommentController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BtagController;
 use App\Http\Controllers\FAQController;
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\PcategoryController;
 use App\Http\Controllers\PcommentController;
+use App\Http\Controllers\PocategoryController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\PotagController;
 use App\Http\Controllers\PrayerController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PtagController;
@@ -86,6 +90,20 @@ Route::middleware([
 
     /** PRAYERS */
     Route::resource('prayers', PrayerController::class);
+
+    //*********** PORTFOLIO ************//
+
+    /** PORTFOLIO CATEGORIES */
+    Route::resource('pocategories', PocategoryController::class);
+
+    /** PORTFOLIO TAGS */
+    Route::resource('potags', PotagController::class);
+
+    /** PORTFOLIOS */
+    Route::resource('portfolios', PortfolioController::class);
+
+    /** IMAGES */
+    Route::resource('images', ImageController::class);
 
 
 

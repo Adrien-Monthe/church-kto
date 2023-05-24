@@ -97,6 +97,42 @@
             </li> <!-- End Tables Nav -->
         @endif
 
+        @if(auth()->user()->userable == null || auth()->user()->userable->access['portfolio'] )
+            <li class="nav-heading">@lang('dash-sidebar.nav-portfolio')</li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#portfolio-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-card-image"></i><span>@lang('dash-sidebar.nav-portfolio')</span><i
+                        class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="portfolio-nav"
+                    class="nav-content collapse {{ str_contains(Route::currentRouteName(), "portfolios") || str_contains(Route::currentRouteName(), "pocategories") || str_contains(Route::currentRouteName(), "potags") ? 'show' : '' }} "
+                    data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="{{ route('pocategories.index', app()->getLocale())  }}"
+                           class="{{ str_contains(Route::currentRouteName(), "pocategories") ? 'active': ''  }}">
+                            <i class="bi bi-circle"></i><span>@lang('dash-sidebar.nav-pcategories')</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('potags.index', app()->getLocale())  }}"
+                           class="{{ str_contains(Route::currentRouteName(), "potags") ? 'active': ''  }}">
+                            <i class="bi bi-circle"></i><span>@lang('dash-sidebar.nav-ptags')</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('portfolios.index', app()->getLocale())  }}"
+                           class="{{ str_contains(Route::currentRouteName(), "portfolio") ? 'active': ''  }}">
+                            <i class="bi bi-circle"></i><span>@lang('dash-sidebar.nav-image')</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </li> <!-- End Tables Nav -->
+        @endif
+
+
 
 
         <li class="nav-heading">Gestion du Site</li>

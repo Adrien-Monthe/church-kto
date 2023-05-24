@@ -17,7 +17,7 @@
     <section class="section">
         <div class="row">
             <div class="col-lg-12">
-                <a href="{{ route('portfolios.create', app()->getLocale())  }}"
+                <a href="{{ route('portfolios.create')  }}"
                    class="btn btn-primary btn-primary-custom"><i
                         class="bi bi-bag-plus me-1"></i> @lang('portfolios.create-portfolio-title')</a>
                 <br>
@@ -47,13 +47,13 @@
                                     <td>{{ $portfolio->category ? $portfolio->category->name : '' }}</td>
                                     <td>
                                         <form
-                                            action="{{ route('portfolios.destroy',[app()->getLocale() ,$portfolio->id]) }}"
+                                            action="{{ route('portfolios.destroy',[$portfolio->id]) }}"
                                             method="Post">
                                             <a class="btn btn-info"
-                                               href="{{ route('portfolios.show',[app()->getLocale() ,$portfolio->id]) }}">@lang('general.btn-view')</a>
+                                               href="{{ route('portfolios.show',[$portfolio->id]) }}">@lang('general.btn-view')</a>
 
                                             <a class="btn btn-primary"
-                                               href="{{ route('portfolios.edit',[app()->getLocale() ,$portfolio->id]) }}"><i
+                                               href="{{ route('portfolios.edit',[$portfolio->id]) }}"><i
                                                     class="bi bi-pencil-square"></i> </a>
                                             @csrf
                                             @method('DELETE')

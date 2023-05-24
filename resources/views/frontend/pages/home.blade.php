@@ -1051,7 +1051,7 @@
             <div class="social__area">
                 <ul class="social__list">
                     <li class="social__list-facebook">
-                        <a href="#">
+                        <a href="https://www.facebook.com/profile.php?id=100064865718626&mibextid=ZbWKwL">
                             <i class="fab fa-facebook-f"></i>
                             <span>facebook</span>
                         </a>
