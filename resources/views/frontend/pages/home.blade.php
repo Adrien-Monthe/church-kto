@@ -123,36 +123,15 @@
                             <p style="text-align: justify;">La <strong>Commission Diocésaine de l’Enfance (CDE)</strong> a pour principal rôle de soutenir l’éducation des enfants en leur inculquant des valeurs humaines et chrétiennes leur permettant de s’intégrer dans la société et d’y apporter un changement. Cette participation à leur éducation est assurée par les encadreurs d’enfants volontaires dans chaque paroisse et formés pour cette mission. La mise en œuvre de cette plateforme, nous permet de participer activement à la formation continue des petits amis de Jésus et de par ailleurs nous aussi en tant qu’encadreurs d’enfants.</p>
                         </div>
                         <div class="section__wrapper">
-                            <div class="about__item">
-                                <div class="about__inner">
-                                    <div class="about__icon">
-                                        <i class="fas fa-briefcase"></i>
-                                    </div>
-                                    <div class="about__content">
-                                        <h5>Glorify God</h5>
-                                        <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="about__item">
-                                <div class="about__inner">
-                                    <div class="about__icon">
-                                        <i class="fas fa-binoculars"></i>
-                                    </div>
-                                    <div class="about__content">
-                                        <h5>Love Community</h5>
-                                        <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div class="about__item">
                                 <div class="about__inner">
                                     <div class="about__icon">
                                         <i class="fas fa-rocket"></i>
                                     </div>
                                     <div class="about__content">
-                                        <h5>Believe Biblically</h5>
-                                        <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+                                        <h5>Objectif Général :</h5>
+                                        <p>Créer un cadre d’épanouissement social, culturel et spirituel de l’enfant à travers des activités qu’organise l’aumônerie diocésaine de la jeunesse et de l’enfance de l’Archidiocèse de Douala - Cameroun.</p>
                                     </div>
                                 </div>
                             </div>
