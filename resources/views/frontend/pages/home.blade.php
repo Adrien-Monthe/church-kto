@@ -105,7 +105,7 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-12">
                     <div class="about__thumbpart">
-                        <img src="/frontend/images/about/01.jpg" alt="about">
+                        <img src="/frontend/images/about/02.jpeg" alt="about">
                         <h3>Mme Laurette NGANKAM</h3>
 {{--                        <span>Church Pastor</span>--}}
                         <p>Responsable de la Commission Diocésaine de l'Enfance</p>
@@ -131,7 +131,7 @@
                                     </div>
                                     <div class="about__content">
                                         <h5>Objectif Général :</h5>
-                                        <p>Créer un cadre d’épanouissement social, culturel et spirituel de l’enfant à travers des activités qu’organise l’aumônerie diocésaine de la jeunesse et de l’enfance de l’Archidiocèse de Douala - Cameroun.</p>
+                                        <p style="text-align: justify">Créer un cadre d’épanouissement social, culturel et spirituel de l’enfant à travers des activités qu’organise l’aumônerie diocésaine de la jeunesse et de l’enfance de l’Archidiocèse de Douala - Cameroun.</p>
                                     </div>
                                 </div>
                             </div>
