@@ -119,7 +119,7 @@
                 <div class="col-lg-8 col-12">
                     <div class="about__contentpart ms-lg-4 ps-lg-5 border-start">
                         <div class="section__header">
-                            <h2>What We Do?</h2>
+                            <h2>A propos de Nous?</h2>
                             <p style="text-align: justify;">La Commission Diocésaine de l’Enfance (CDE) a pour principal rôle de soutenir l’éducation des enfants en leur inculquant des valeurs humaines et chrétiennes leur permettant de s’intégrer dans la société et d’y apporter un changement. Cette participation à leur éducation est assurée par les encadreurs d’enfants volontaires dans chaque paroisse et formés pour cette mission. La mise en œuvre de cette plateforme, nous permet de participer activement à la formation continue des petits amis de Jésus et de par ailleurs nous aussi en tant qu’encadreurs d’enfants.</p>
                         </div>
                         <div class="section__wrapper">
