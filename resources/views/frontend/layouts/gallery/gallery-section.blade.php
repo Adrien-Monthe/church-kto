@@ -16,7 +16,7 @@
             </div>
             <div class="row g-3 grid">
                 @foreach($images as $image)
-                    <div class="col-lg-4 col-sm-6 col-12 {{ $image->imageable->codename }}">
+                    <div class="col-lg-3 col-sm-6 col-12 {{ $image->imageable->codename }}">
                         <div class="gallery__item">
                             <div class="gallery__inner">
                                 <div class="gallery__thumb">
