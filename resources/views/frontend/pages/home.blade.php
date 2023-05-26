@@ -37,7 +37,7 @@
                     <div class="container">
                         <div class="banner__content">
                             <h2>Rencontrer Jésus</h2>
-                            <p>Les enfants sont l'Eglise de demain raison pour laquelle nous créons un cadre d'épanouissement social, culturel et spirituel de l'enfant à travers des activités organisées</p>
+                            <p style="text-align: justify">Les enfants sont l'Eglise de demain raison pour laquelle nous créons un cadre d'épanouissement social, culturel et spirituel de l'enfant à travers des activités organisées</p>
                             <a href="#" class="default-btn move-right"><span>GET HELP NOW</span></a>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                     <div class="container">
                         <div class="banner__content ms-lg-auto">
                             <h2>Avoir un coeur joyeux</h2>
-                            <p>"Laissez venir vers moi les petits enfants". Les enfants sont pleins d'émotions et de véritables livres pour nous, une main tendue pour leurs semblables et ceci avec un coeur joyeux et de générosité</p>
+                            <p style="text-align: justify">"Laissez venir vers moi les petits enfants". Les enfants sont pleins d'émotions et de véritables livres pour nous, une main tendue pour leurs semblables et ceci avec un coeur joyeux et de générosité</p>
 
                         </div>
                     </div>
