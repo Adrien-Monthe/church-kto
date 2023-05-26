@@ -6,6 +6,8 @@ use App\Models\Bcategory;
 use App\Models\Bcatergory;
 use App\Models\Blog;
 use App\Models\Btag;
+use App\Models\Image;
+use App\Models\Portfolio;
 use App\Models\Prayer;
 use Illuminate\Http\Request;
 
@@ -16,7 +18,8 @@ class FrontendController extends Controller
     {
         $data = $this->getData();
         $data['blogs'] = Blog::inRandomOrder()->limit(6)->get();
-
+        $data['images'] = Image::where('imageable_type','App\Models\Portfolio')->inRandomOrder()->limit(9)->get();
+        $data['portfolios'] = Portfolio::inRandomOrder()->limit(4)->get();
 
         return view('frontend.pages.home', $data);
     }
