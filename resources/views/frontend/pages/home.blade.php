@@ -25,9 +25,9 @@
                 <div class="banner" style="background-image: url(/frontend/images/banner/01.jpg);">
                     <div class="container">
                         <div class="banner__content ms-lg-auto">
-                            <h2>We Believe In Huminity</h2>
-                            <p>Enthusiastically underwhelm quality benefits rather than professional "outside the box" thinking. Distinctively network highly efficient leadership skills</p>
-                            <a href="#" class="default-btn move-right"><span>GET HELP NOW</span></a>
+                            <h2>Nous croyons en l'enfance</h2>
+                            <p style="text-align: justify">Ils sont ce qu'il y a de plus beau et notre pastorale consiste à les inculquer les valeurs humaines et chrétiennes leur permettant de s'intégrer dans la société et d'y apporter un changement</p>
+                            <a href="#" class="default-btn move-right"><span>Visitez Notre Eglise</span></a>
                         </div>
                     </div>
                 </div>
@@ -36,8 +36,8 @@
                 <div class="banner" style="background-image: url(/frontend/images/banner/02.jpg);">
                     <div class="container">
                         <div class="banner__content">
-                            <h2>A Powerful Religion Theme</h2>
-                            <p>Enthusiastically underwhelm quality benefits rather than professional "outside the box" thinking. Distinctively network highly efficient leadership skills</p>
+                            <h2>Rencontrer Jésus</h2>
+                            <p>Les enfants sont l'Eglise de demain raison pour laquelle nous créons un cadre d'épanouissement social, culturel et spirituel de l'enfant à travers des activités organisées</p>
                             <a href="#" class="default-btn move-right"><span>GET HELP NOW</span></a>
                         </div>
                     </div>
@@ -47,9 +47,9 @@
                 <div class="banner" style="background-image: url(/frontend/images/banner/03.jpg);">
                     <div class="container">
                         <div class="banner__content ms-lg-auto">
-                            <h2>It"S Useless To Lecture</h2>
-                            <p>Enthusiastically underwhelm quality benefits rather than professional "outside the box" thinking. Distinctively network highly efficient leadership skills</p>
-                            <a href="#" class="default-btn move-right"><span>GET HELP NOW</span></a>
+                            <h2>Avoir un coeur joyeux</h2>
+                            <p>"Laissez venir vers moi les petits enfants". Les enfants sont pleins d'émotions et de véritables livres pour nous, une main tendue pour leurs semblables et ceci avec un coeur joyeux et de générosité</p>
+
                         </div>
                     </div>
                 </div>
