@@ -128,7 +128,7 @@ class ImageController extends Controller
      * @param Image $image
      * @return Response
      */
-    public function destroy($lang, Image $image)
+    public function destroy( Image $image)
     {
 
         $image->delete();
