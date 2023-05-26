@@ -150,7 +150,7 @@
                                                 </th>
                                                 <td>
                                                     <form
-                                                        action="{{ route('images.destroy',[app()->getLocale() ,$image->id]) }}"
+                                                        action="{{ route('images.destroy',[$image->id]) }}"
                                                         method="Post">
 
 
