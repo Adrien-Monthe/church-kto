@@ -18,7 +18,7 @@ class FrontendController extends Controller
     {
         $data = $this->getData();
         $data['blogs'] = Blog::inRandomOrder()->limit(6)->get();
-        $data['images'] = Image::where('imageable_type','App\Models\Portfolio')->inRandomOrder()->limit(9)->get();
+        $data['images'] = Image::where('imageable_type','App\Models\Portfolio')->inRandomOrder()->limit(12)->get();
         $data['portfolios'] = Portfolio::inRandomOrder()->limit(4)->get();
 
         return view('frontend.pages.home', $data);
